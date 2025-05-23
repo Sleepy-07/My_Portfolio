@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Sahil | Android Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Sahil</a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#achievements">Achievements</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#playground">Playground</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Hi, I'm <span class="highlight">Sahil</span></h1>
+        <p>Android Developer | Problem Solver | C/C++ Enthusiast</p>
+        <a href="#projects" class="btn">View My Work</a> 
+        <a href="my_resume.pdf"  class="btnRes " style="marker-start: 100px;" >Resume</a>
+      </div>
+    </div>
+  </section>
+
+  
+ 
+
+
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <img src="profileimage.jpg" alt="Sahil" class="about-img">
+        <div class="about-text">
+          <p>I build intuitive Android apps with robust architectures. When I’m not debugging Kotlin, I solve DSA puzzles in C++ or create figma Designs for my projects .</p>
+          <br>
+          <p>With a strong foundation in Data Structures and Algorithms, I approach problems methodically and optimize solutions for performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section-dark">
+        <div class="container">
+          <h2 class="section-title">Achievements</h2>
+          <div class="achievements-grid">
+            <div class="achievement-card">
+              <div class="achievement-icon">
+                <i class="fas fa-trophy"></i>
+              </div>
+              <h3>Mobile App Designing</h3>
+              <p>1st place at GNA University, 2025</p>
+            </div>
+            
+            <div class="achievement-card">
+              <div class="achievement-icon">
+                <i class="fas fa-medal"></i>
+              </div>
+              <h3>Project Display</h3>
+              <p>1st prize in Punjab inter-poly TechFest (2025)</p>
+              <p>1st prize in Lyalpur Khalsa College (2025)</p>
+            </div>
+            
+            <div class="achievement-card">
+              <div class="achievement-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Hackathon Participations</h3>
+              <p>GNA Hackathon 3.0 - (28-29 March / 2025)</p>
+              <p>Code Crafter 2.0 - (10-11 April / 2025)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <i class="fab fa-android"></i>
+          <h3>Android Development</h3>
+          <p>Kotlin, Jetpack Compose, Firebase</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>Programming</h3>
+          <p>C, C++, Java, Python, DSA</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-tools"></i>
+          <h3>Tools</h3>
+          <p>Git, Android Studio, Figma, Vs Code</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+        
+        <!-- Project 1 - ChargeNG -->
+        <div class="project-card">
+          <div class="media-container">
+            <div class="carousel" id="carousel-1">
+              <div class="carousel-inner">
+                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.10_2128dab0.jpg" alt="ChargeNG Screenshot 1" class="active">
+                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.10_4d724c76.jpg" alt="ChargeNG Screenshot 2">
+                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.11_4c0fb036.jpg" alt="ChargeNG Screenshot 3">
+                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.11_5c1399b4.jpg" alt="ChargeNG Screenshot 4">
+                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.12_32c30c59.jpg" alt="ChargeNG Screenshot 5">
+                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.12_e155b19a.jpg" alt="ChargeNG Screenshot 6">
+              </div>
+              <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-1')">❮</button>
+              <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-1')">❯</button>
+            </div>
+            <div class="video-container" id="video-1">
+              <video controls poster="videos/chargeNG-poster.jpg">
+                <source src="videos/chargeNG.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>ChargeNG</h3>
+            <p>ChargeNG is an app design to find the nearby Ev and CNG stations With Gamification & Achievements  .</p>
+            <div class="tech-tags">
+              <span>Android</span>
+              <span>Firebase</span>
+              <span>Google Maps API</span>
+              <span>RetroFit</span>
+              <span>IOT Integration</span>
+            </div>
+            <div class="project-links">
+              <!-- <a href="https://github.com/Sleepy-07/ChargeNG" target="_blank" class="btn btn-github">
+                <i class="fab fa-github"></i> Code
+              </a> -->
+              <a href="#" class="btn btn-video" onclick="toggleVideo('video-1', 'carousel-1')">
+                <i class="fas fa-video"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 - Revisly -->
+        <div class="project-card">
+          <div class="media-container">
+            <div class="carousel" id="carousel-2">
+              <div class="carousel-inner">
+                <img src="revisly/1.jpg" alt="Revisly Screenshot 1" class="active">
+                <img src="revisly/2.jpg" alt="Revisly Screenshot 2">
+                <img src="revisly/3.jpg" alt="Revisly Screenshot 3">
+                <img src="revisly/4.jpg" alt="Revisly Screenshot 4">
+                <img src="revisly/5.jpg" alt="Revisly Screenshot 5">
+                <img src="revisly/6.jpg" alt="Revisly Screenshot 6">
+              </div>
+              <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-2')">❮</button>
+              <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-2')">❯</button>
+            </div>
+            <div class="video-container" id="video-2">
+              <video controls poster="videos/revisly-poster.jpg">
+                <source src="videos/revisly.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Revisly</h3>
+            <p>An Android app to organize content (images, titles, links) from other-platform like Instagram, YouTube and Pinterest into a 
+                single interface.</p>
+            <div class="tech-tags">
+              <span>Android</span>
+              <span>Room Database</span>
+              <span>Material Design</span>
+              <span>Python</span>
+              <span>Fast API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Sleepy-07/Revisly" target="_blank" class="btn btn-github">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <a href="#" class="btn btn-video" onclick="toggleVideo('video-2', 'carousel-2')">
+                <i class="fas fa-video"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        </div>
+        
+    </div>
+        
+</section>
+
+<!-- Playground Section -->
+<section id="playground" class="section-dark">
+    <div class="container">
+      <h2 class="section-title">Playground</h2>
+      <p class="section-subtitle">A collection of experimental projects, UI animations, and design concepts where I explore new ideas and techniques.</p>
+      <div class="playground-grid">
+        <!-- Project 1 -->
+        <div class="mini-project-card">
+          <div class="mini-project-media">
+            <div class="video-wrapper">
+              <video class="mini-project-video" muted loop playsinline poster="mini projects/card-poster.jpg">
+                <source src="mini projects/card Animation.mp4" type="video/mp4">
+              </video>
+            </div>
+            <button class="play-button" onclick="togglePlay(this)">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="mini-project-info">
+            <h3>Motivation Card Swapping</h3>
+            <p>An animated card swapping UI showing motivational quotes with smooth transitions motion.</p>
+            <div class="mini-project-tags">
+              <span>Jetpack Compose</span>
+              <span>Animations</span>
+              <span>Custom Layouts</span>
+            </div>
+            <div class="mini-project-links">
+              <a href="https://github.com/Sleepy-07/Animation_Practise2" target="_blank" class="btn btn-small">
+                <i class="fab fa-github"></i> Code
+              </a>
+              <!-- <a href="figma/motivation-cards.fig" download class="btn btn-small btn-outline">
+                <i class="fab fa-figma"></i> Design
+              </a> -->
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="mini-project-card">
+          <div class="mini-project-media">
+            <div class="video-wrapper">
+              <video class="mini-project-video" muted loop playsinline poster="mini projects/cardthrowing-poster.jpg">
+                <source src="mini projects/cardthrowing.mp4" type="video/mp4">
+              </video>
+            </div>
+            <button class="play-button" onclick="togglePlay(this)">
+              <i class="fas fa-play"></i>
+            </button>
+          </div>
+          <div class="mini-project-info">
+            <h3>Card Throwing Animation</h3>
+            <p>Interactive card throwing animation with gesture controls in Jetpack Compose.</p>
+            <div class="mini-project-tags">
+              <span>Jetpack Compose</span>
+              <span>Animations</span>
+              <span>Gestures</span>
+            </div>
+            <div class="mini-project-links">
+              <a href="https://github.com/Sleepy-07/Animation_Practise2" target="_blank" class="btn btn-small">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+
+<section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="contact-info">
+        <!-- Social Links -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/sahil-9abb97327" target="_blank" class="social-btn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
+          <a href="https://github.com/Sleepy-07" target="_blank" class="social-btn">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.instagram.com/sahilv_7" target="_blank" class="social-btn">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="mailto:sahilvrmjji@gmial.com" class="social-btn">
+            <i class="fas fa-envelope"></i> Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
