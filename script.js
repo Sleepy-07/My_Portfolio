@@ -380,3 +380,70 @@ let currentSlide = {
         });
       });
     });
+
+
+
+
+
+
+
+    function toggleCarousel(carouselId, button) {
+  const carousel = document.getElementById(carouselId);
+  const mediaContainer = carousel.parentElement;
+  const cover = mediaContainer.querySelector('.project-cover');
+  
+  if (carousel.style.display === 'none') {
+    // Show carousel
+    carousel.style.display = 'block';
+    cover.classList.remove('active');
+    button.innerHTML = '<i class="fas fa-times"></i> Close';
+  } else {
+    // Show cover
+    carousel.style.display = 'none';
+    cover.classList.add('active');
+    button.innerHTML = '<i class="fas fa-images"></i> View Screenshots';
+  }
+}
+
+function toggleVideo(videoId, carouselId) {
+  event.preventDefault();
+  const video = document.getElementById(videoId);
+  const carousel = document.getElementById(carouselId);
+  const mediaContainer = video.parentElement;
+  const cover = mediaContainer.querySelector('.project-cover');
+  const viewBtn = mediaContainer.querySelector('.view-more-btn');
+  
+  if (video.style.display === 'none' || !video.style.display) {
+    // Show video
+    video.style.display = 'block';
+    carousel.style.display = 'none';
+    cover.classList.remove('active');
+    viewBtn.style.display = 'none';
+    video.play();
+  } else {
+    // Hide video
+    video.style.display = 'none';
+    cover.classList.add('active');
+    viewBtn.style.display = 'flex';
+    video.pause();
+  }
+}
+
+function moveSlide(direction, carouselId) {
+  const carousel = document.getElementById(carouselId);
+  const slides = carousel.querySelectorAll('.carousel-inner img');
+  let activeIndex = 0;
+  
+  slides.forEach((slide, index) => {
+    if (slide.classList.contains('active')) {
+      activeIndex = index;
+      slide.classList.remove('active');
+    }
+  });
+  
+  let newIndex = activeIndex + direction;
+  if (newIndex < 0) newIndex = slides.length - 1;
+  if (newIndex >= slides.length) newIndex = 0;
+  
+  slides[newIndex].classList.add('active');
+}

@@ -161,103 +161,156 @@
     
 
 
-  <!-- Projects Section -->
- <section id="projects">
-    <div class="container">
-      <div class="about-header">
-        <h2 class="section-title">
-          <span class="title-highlight">My Projects</span>
-        </h2>
-        <p class="section-subtitle">Explore my latest work and innovations</p>
+<!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <div class="about-header">
+      <h2 class="section-title">
+        <span class="title-highlight">My Projects</span>
+      </h2>
+      <p class="section-subtitle">Explore my latest work and innovations</p>
+    </div>
+    <div class="projects-grid">
+      
+      <!-- Project 1 - ChargeNG -->
+      <div class="project-card">
+        <div class="media-container">
+          <img src="Projects/ProjectCover/coverEV.png" alt="ChargeNG Cover" class="project-cover active">
+          <div class="carousel" id="carousel-1" style="display:none">
+            <div class="carousel-inner">
+              <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.10_2128dab0.jpg" alt="ChargeNG Screenshot 1">
+              <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.10_4d724c76.jpg" alt="ChargeNG Screenshot 2">
+              <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.11_4c0fb036.jpg" alt="ChargeNG Screenshot 3">
+              <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.11_5c1399b4.jpg" alt="ChargeNG Screenshot 4">
+              <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.12_32c30c59.jpg" alt="ChargeNG Screenshot 5">
+              <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.12_e155b19a.jpg" alt="ChargeNG Screenshot 6">
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-1')">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-1')">❯</button>
+          </div>
+          <div class="video-container" id="video-1">
+            <video controls poster="videos/chargeNG-poster.jpg">
+              <source src="videos/chargeNG.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <button class="view-more-btn" onclick="toggleCarousel('carousel-1', this)">
+            <i class="fas fa-images"></i> View Screenshots
+          </button>
+        </div>
+        <div class="project-info">
+          <h3>ChargeNG</h3>
+          <p>ChargeNG is an innovative app designed to find nearby EV and CNG stations with gamification & achievements. Features real-time station availability, route optimization, and IoT integration for seamless charging experiences.</p>
+          <div class="tech-tags">
+            <span>Android</span>
+            <span>Firebase</span>
+            <span>Google Maps API</span>
+            <span>RetroFit</span>
+            <span>IoT Integration</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn btn-video" onclick="toggleVideo('video-1', 'carousel-1')">
+              <i class="fas fa-video"></i> Demo
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="projects-grid">
-        
-        <!-- Project 1 - ChargeNG -->
-        <div class="project-card">
-          <div class="media-container">
-            <div class="carousel" id="carousel-1">
-              <div class="carousel-inner">
-                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.10_2128dab0.jpg" alt="ChargeNG Screenshot 1" class="active">
-                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.10_4d724c76.jpg" alt="ChargeNG Screenshot 2">
-                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.11_4c0fb036.jpg" alt="ChargeNG Screenshot 3">
-                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.11_5c1399b4.jpg" alt="ChargeNG Screenshot 4">
-                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.12_32c30c59.jpg" alt="ChargeNG Screenshot 5">
-                <img src="chargeNG/WhatsApp Image 2025-05-04 at 23.44.12_e155b19a.jpg" alt="ChargeNG Screenshot 6">
-              </div>
-              <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-1')">❮</button>
-              <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-1')">❯</button>
-            </div>
-            <div class="video-container" id="video-1">
-              <video controls poster="videos/chargeNG-poster.jpg">
-                <source src="videos/chargeNG.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
-          <div class="project-info">
-            <h3>ChargeNG</h3>
-            <p>ChargeNG is an innovative app designed to find nearby EV and CNG stations with gamification & achievements. Features real-time station availability, route optimization, and IoT integration for seamless charging experiences.</p>
-            <div class="tech-tags">
-              <span>Android</span>
-              <span>Firebase</span>
-              <span>Google Maps API</span>
-              <span>RetroFit</span>
-              <span>IoT Integration</span>
-            </div>
-            <div class="project-links">
-              <a href="#" class="btn btn-video" onclick="toggleVideo('video-1', 'carousel-1')">
-                <i class="fas fa-video"></i> Demo
-              </a>
-            </div>
-          </div>
-        </div>
 
-        <!-- Project 2 - Revisly -->
-        <div class="project-card">
-          <div class="media-container">
-            <div class="carousel" id="carousel-2">
-              <div class="carousel-inner">
-                <img src="revisly/1.jpg" alt="Revisly Screenshot 1" class="active">
-                <img src="revisly/2.jpg" alt="Revisly Screenshot 2">
-                <img src="revisly/3.jpg" alt="Revisly Screenshot 3">
-                <img src="revisly/4.jpg" alt="Revisly Screenshot 4">
-                <img src="revisly/5.jpg" alt="Revisly Screenshot 5">
-                <img src="revisly/6.jpg" alt="Revisly Screenshot 6">
-              </div>
-              <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-2')">❮</button>
-              <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-2')">❯</button>
+      <!-- Project 2 - Musicly -->
+      <div class="project-card">
+        <div class="media-container">
+          <img src="Projects/ProjectCover/Cover.png" alt="Musicly Cover" class="project-cover active">
+          <div class="carousel" id="carousel-3" style="display:none">
+            <div class="carousel-inner">
+              <img src="musicly/screen1.jpg" alt="Musicly Screenshot 1">
+              <img src="musicly/screen2.jpg" alt="Musicly Screenshot 2">
+              <img src="musicly/screen3.jpg" alt="Musicly Screenshot 3">
+              <img src="musicly/screen4.jpg" alt="Musicly Screenshot 4">
             </div>
-            <div class="video-container" id="video-2">
-              <video controls poster="videos/revisly-poster.jpg">
-                <source src="videos/revisly.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-3')">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-3')">❯</button>
           </div>
-          <div class="project-info">
-            <h3>Revisly</h3>
-            <p>A comprehensive Android application that organizes content from multiple platforms like Instagram, YouTube, and Pinterest into a single, intuitive interface. Streamlines content management with advanced filtering and categorization.</p>
-            <div class="tech-tags">
-              <span>Android</span>
-              <span>Room Database</span>
-              <span>Material Design</span>
-              <span>Python</span>
-              <span>Fast API</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Sleepy-07/Revisly" target="_blank" class="btn btn-github">
-                <i class="fab fa-github"></i> Code
-              </a>
-              <a href="#" class="btn btn-video" onclick="toggleVideo('video-2', 'carousel-2')">
-                <i class="fas fa-video"></i> Demo
-              </a>
-            </div>
+          <div class="video-container" id="video-3">
+            <video controls poster="videos/musicly-poster.jpg">
+              <source src="videos/musicly.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <button class="view-more-btn" onclick="toggleCarousel('carousel-3', this)">
+            <i class="fas fa-images"></i> View Screenshots
+          </button>
+        </div>
+        <div class="project-info">
+          <h3>Musicly</h3>
+          <p>A modern music player application with sleek UI, playlist management, and support for various audio formats with background playback with bluetooth controls.</p>
+          <div class="tech-tags">
+            <span>Android</span>
+            <span>Kotlin</span>
+            <span>Jetpack Compose</span>
+            <span>Foreground Service</span>
+            <span>Room Database</span>
+            <span>ExoPlayer</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sleepy-07/Musicly" target="_blank" class="btn btn-github">
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a href="#" class="btn btn-video" onclick="toggleVideo('video-3', 'carousel-3')">
+              <i class="fas fa-video"></i> Demo
+            </a>
           </div>
         </div>
-        
+      </div>
+
+      <!-- Project 3 - Revisly -->
+      <div class="project-card">
+        <div class="media-container">
+          <img src="Projects/ProjectCover/Coverre.png" alt="Revisly Cover" class="project-cover active">
+          <div class="carousel" id="carousel-2" style="display:none">
+            <div class="carousel-inner">
+              <img src="revisly/1.jpg" alt="Revisly Screenshot 1">
+              <img src="revisly/2.jpg" alt="Revisly Screenshot 2">
+              <img src="revisly/3.jpg" alt="Revisly Screenshot 3">
+              <img src="revisly/4.jpg" alt="Revisly Screenshot 4">
+              <img src="revisly/5.jpg" alt="Revisly Screenshot 5">
+              <img src="revisly/6.jpg" alt="Revisly Screenshot 6">
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-2')">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-2')">❯</button>
+          </div>
+          <div class="video-container" id="video-2">
+            <video controls poster="videos/revisly-poster.jpg">
+              <source src="videos/revisly.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <button class="view-more-btn" onclick="toggleCarousel('carousel-2', this)">
+            <i class="fas fa-images"></i> View Screenshots
+          </button>
+        </div>
+        <div class="project-info">
+          <h3>Revisly</h3>
+          <p>A comprehensive Android application that organizes content from multiple platforms like Instagram, YouTube, and Pinterest into a single, intuitive interface. Streamlines content management with advanced filtering and categorization.</p>
+          <div class="tech-tags">
+            <span>Android</span>
+            <span>Room Database</span>
+            <span>Material Design</span>
+            <span>Python</span>
+            <span>Fast API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/Sleepy-07/Revisly" target="_blank" class="btn btn-github">
+              <i class="fab fa-github"></i> Code
+            </a>
+            <a href="#" class="btn btn-video" onclick="toggleVideo('video-2', 'carousel-2')">
+              <i class="fas fa-video"></i> Demo
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- Playground Section -->
 <section id="playground">
@@ -347,9 +400,6 @@
           </a>
           <a href="https://github.com/Sleepy-07" target="_blank" class="social-btn">
             <i class="fab fa-github"></i> GitHub
-          </a>
-          <a href="https://www.instagram.com/sahilv_7" target="_blank" class="social-btn">
-            <i class="fab fa-instagram"></i> Instagram
           </a>
           <a href="mailto:sahilvrmjji@gmial.com" class="social-btn">
             <i class="fas fa-envelope"></i> Email
